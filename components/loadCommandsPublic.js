@@ -24,11 +24,11 @@ module.exports = async (client) => {
                 );
                 response = '✅ Comandos integrados carregados.'
             } catch (err) {
-                response = '❌ Erro encontrado: \n'+ err.stack || err.message || err
+                response = '❌ Erro ao carregar os comandos integrados: \n'+ err.stack || err.message || err
             }
             
     }catch (err) {
-            response = '❌ Erro encontrado: \n'+ err.stack || err.message || err
+            response = '❌ Erro ao carregar os comandos integrados: \n'+ err.stack || err.message || err
     }
     console.log(response)
 }

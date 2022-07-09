@@ -15,7 +15,7 @@ module.exports = (client) => {
         })
         response = '✅ Comandos ADM carregados'
     }catch (err) {
-        response = '❌ Erro encontrado: \n'+ err.stack || err.message || err
+        response = '❌ Erro ao carregar os comandos ADM: \n'+ err.stack || err.message || err
     }
     return  console.log(response)
 }

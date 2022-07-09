@@ -5,6 +5,10 @@ const data = (client) => {
     const consoleServer = client.channels.cache.get("875211327726059570");
     const suporte = servidor.roles.cache.get('878761418067963984');
     const terminal = client.channels.cache.get('875200644695355440');
+    const info = {
+        channel: '875200645626478605',
+        panel: '972317313825120307'
+    }
     const erro = new Discord.MessageEmbed()
     .setTitle('ERRO!')
     .setColor('#FF0000')
@@ -25,7 +29,8 @@ const data = (client) => {
         suporte: suporte,
         relatorio: Relatorio,
         terminal: terminal,
-        servidor: servidor
+        servidor: servidor,
+        info: info
     };
 }
     

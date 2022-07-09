@@ -14,7 +14,8 @@ try{
     }
     response = '✅ Eventos carregados.'
 }catch(err){
-    response = '❌ Erro encontrado: \n' + err.stack || err.message || err
+    console.log('❌ sistemas offline')
+    response = '❌ Erro ao carregar os eventos: \n' + err.stack || err.message || err
 }
     return console.log(response) 
 }
