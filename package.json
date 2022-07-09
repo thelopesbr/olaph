@@ -1,0 +1,26 @@
+{
+  "name": "olaph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "TheLopesBR",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.6.0",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
+    "jimp": "^0.16.1",
+    "lowdb": "^1.0.0",
+    "moment": "^2.24.0",
+    "mongoose": "^6.1.8",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

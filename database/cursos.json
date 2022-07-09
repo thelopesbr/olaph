@@ -1,0 +1,60 @@
+{
+  "alura": {
+    "name": "Alura",
+    "ativo": true,
+    "status": "Ocupado",
+    "author": "D4vi",
+    "authorID": "484082161276813322",
+    "inicio": "23:12",
+    "dia": 29
+  },
+  "b7": {
+    "name": "B7",
+    "ativo": true,
+    "status": "Ocupado",
+    "author": "Eduardo",
+    "authorID": "862080274907922432",
+    "inicio": "19:46",
+    "dia": 28
+  },
+  "origamid": {
+    "name": "Origamid",
+    "ativo": true,
+    "status": "Ocupado",
+    "author": "D4vi",
+    "authorID": "484082161276813322",
+    "inicio": "23:13",
+    "dia": 29
+  },
+  "adm": {
+    "name": "Adm University",
+    "ativo": false,
+    "status": "Disponivel",
+    "author": "",
+    "authorID": "",
+    "inicio": "",
+    "dia": ""
+  },
+  "colaboradores": {
+    "Janeiro": [],
+    "Fevereiro": [],
+    "Março": [],
+    "Abril": [],
+    "Maio": [],
+    "Junho": [],
+    "Julho": [],
+    "Agosto": [],
+    "Setembro": [
+      "lucashamon1",
+      "Luis",
+      "Felipe Saadi",
+      "Alan Ricardo",
+      "Jeferson",
+      "Eduardo",
+      "D4vi"
+    ],
+    "Outubro": [],
+    "Novembro": [],
+    "Dezembro": []
+  }
+}
