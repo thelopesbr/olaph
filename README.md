@@ -1,6 +1,7 @@
 #Status: Em desenvolvimento
 #version: v2
 
+Events:
 - [x] ChannelCreate
 - [x] channelDelete
 - [ ]  guildMemberAdd
