@@ -1,5 +1,6 @@
-#Status: Em desenvolvimento
-#version: v2
+https://img.shields.io/badge/status-development-orange
+https://img.shields.io/badge/version-v2-blue
+
 
 Events:
 - [x] ChannelCreate
