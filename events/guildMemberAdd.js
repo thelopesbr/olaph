@@ -1,10 +1,10 @@
 const { MessageEmbed } = require("discord.js");
 
-require('../src/models/membro');
+require('../src/models/member');
 
 const jimp = require("jimp");
 const  Mongoose  = require("mongoose");
-const Member = Mongoose.model('Membro');
+const Member = Mongoose.model('Member');
 
 module.exports = {
 	name: 'guildMemberAdd',
@@ -40,7 +40,7 @@ module.exports = {
 			}
 			else{
 				try{
-					console.log('Iniciando timer')
+					console.log(`Iniciando timer para o membro ${member.user.tag}`)
 					setTimeout(() => {
 						member.roles.set(['875200644678570076']);
 						member.send({embeds: [auth]});

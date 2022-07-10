@@ -1,7 +1,7 @@
 const Config = require("../components/config");
 const EmbedInfo = require("../components/info");
 const  Mongoose  = require("mongoose");
-const Member = Mongoose.model('Membro');
+const Member = Mongoose.model('Member');
 
 //precisa desenvolver isso aqui
 
