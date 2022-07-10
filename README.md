@@ -11,6 +11,6 @@
 - [ ]  interactionCreate
 - [x]  messageCreate
 - [ ]  ready
-- [ ]  unhancleRejection
+- [x]  unhancleRejection
 - [x]  voiceStateUpdate
 
