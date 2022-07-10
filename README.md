@@ -4,7 +4,7 @@
 ## Events:
 - [x] ChannelCreate
 - [x] channelDelete
-- [ ]  guildMemberAdd
+- [x]  guildMemberAdd
 - [ ]  guildMemberRemove
 - [ ]  guildMemberUpdate
 - [ ]  guildUpdate
