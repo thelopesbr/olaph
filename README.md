@@ -7,7 +7,7 @@
 - [x]  guildMemberAdd
 - [ ]  guildMemberRemove
 - [ ]  guildMemberUpdate
-- [ ]  guildUpdate
+- [x]  guildUpdate
 - [ ]  interactionCreate
 - [x]  messageCreate
 - [ ]  ready
