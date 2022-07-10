@@ -1,4 +1,5 @@
 const Config = require("../components/config");
+const { MessageEmbed , MessageAttachment} = require("discord.js");
 module.exports = {
 	name: 'messageCreate',
 	once: false,

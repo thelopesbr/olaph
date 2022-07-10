@@ -8,7 +8,10 @@ try{
         const event = require(`../events/${file}`);
         if (event.once) {
             client.once(event.name, (activator) => event.execute(activator,client,prefix));
-        } else {
+        } else if (event.name == 'voiceStateUpdate') {
+            client.on(event.name, (oldMember, newMember) => event.execute(oldMember, newMember,client,prefix));
+        }
+        else{
             client.on(event.name, (activator) => event.execute(activator,client,prefix));
         }
     }

@@ -2,6 +2,7 @@ const Config = require("../components/config");
 const EmbedInfo = require("../components/info");
 const  Mongoose  = require("mongoose");
 const Member = Mongoose.model('Membro');
+
 //precisa desenvolver isso aqui
 
 module.exports = {
