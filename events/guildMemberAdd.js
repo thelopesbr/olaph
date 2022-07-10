@@ -51,8 +51,8 @@ module.exports = {
 				}
 			}
 			let fonte = await jimp.loadFont(jimp.FONT_SANS_32_BLACK);
-			let mask = await jimp.read('./img/mascara.png');
-			let fundo = await jimp.read('./img/fundo.png');
+			let mask = await jimp.read('./src/img/mascara.png');
+			let fundo = await jimp.read('./src/img/fundo.png');
 			const avatarNull = 'https://cdn.discordapp.com/embed/avatars/3.png'
 			const memberAvatar = member.user.avatarURL({ format: 'png', dynamic: true }) || avatarNull
 			jimp.read(memberAvatar).then(avatar => {
@@ -60,8 +60,8 @@ module.exports = {
 				mask.resize(130, 130)
 				avatar.mask(mask)
 				fundo.print(fonte, 170, 175, member.user.username)
-				fundo.composite(avatar, 40, 90).write('./img/bemvindo.png');
-				setTimeout(() => welcome.send({content: `${member}`,files: ['./img/bemvindo.png']}), 1000);
+				fundo.composite(avatar, 40, 90).write('./src/img/bemvindo.png');
+				setTimeout(() => welcome.send({content: `${member}`,files: ['./src/img/bemvindo.png']}), 1000);
 				
 			})
 			.catch(err => {
