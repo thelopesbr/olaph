@@ -5,6 +5,7 @@ const {
   MessageAttachment,
   Intents,
 } = require("discord.js");
+
 const client = new Client({
   partials: ["MESSAGE", "CHANNEL", "REACTION", "USER", "GUILD_MEMBER"],
   intents: [
