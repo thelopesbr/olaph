@@ -1,6 +1,5 @@
 const Config = require("../components/config");
 const EmbedInfo = require("../components/info");
-
 module.exports = {
 	name: 'guildUpdate',
 	once: false,

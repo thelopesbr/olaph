@@ -9,7 +9,7 @@
 - [ ]  guildMemberUpdate
 - [ ]  guildUpdate
 - [ ]  interactionCreate
-- [ ]  messageCreate
+- [x]  messageCreate
 - [ ]  ready
 - [ ]  unhancleRejection
 - [x]  voiceStateUpdate
