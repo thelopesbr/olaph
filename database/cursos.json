@@ -3,10 +3,10 @@
     "name": "Alura",
     "ativo": true,
     "status": "Ocupado",
-    "author": "D4vi",
-    "authorID": "484082161276813322",
-    "inicio": "23:12",
-    "dia": 29
+    "author": "Jeferson",
+    "authorID": "334359138110799872",
+    "inicio": "11:54",
+    "dia": 19
   },
   "b7": {
     "name": "B7",
@@ -43,7 +43,9 @@
     "Maio": [],
     "Junho": [],
     "Julho": [],
-    "Agosto": [],
+    "Agosto": [
+      "Jeferson"
+    ],
     "Setembro": [
       "lucashamon1",
       "Luis",
