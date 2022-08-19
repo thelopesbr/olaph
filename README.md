@@ -8,7 +8,7 @@
 - ✅ channelDelete
 - ✅  guildMemberAdd
 - ❌  guildMemberRemove
-- ❌  guildMemberUpdate
+- ✅  guildMemberUpdate
 - ✅  guildUpdate
 - ⁉️  interactionCreate
 - ✅  messageCreate
