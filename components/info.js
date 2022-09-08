@@ -8,16 +8,16 @@ module.exports = (client, cor) =>{
 
     let membros =servidor.members.cache.filter(member => member.roles.cache.has('875200644695355436') && member.user.bot == false).size;
     let exmembro =servidor.members.cache.filter(member => member.roles.cache.has('875200644695355434') && member.user.bot == false).size;
-    let presidencia =servidor.members.cache.filter(member => member.roles.cache.has('875200644695355435') && member.user.bot == false).size;
-    let gp =servidor.members.cache.filter(member => member.roles.cache.has('875200644678570084') && member.user.bot == false).size;
-    let projetos =servidor.members.cache.filter(member => member.roles.cache.has('875200644695355432') && member.user.bot == false).size;
-    let adm =servidor.members.cache.filter(member => member.roles.cache.has('875200644678570083') && member.user.bot == false).size;
-    let negocios =servidor.members.cache.filter(member => member.roles.cache.has('875200644678570082') && member.user.bot == false).size;
+    let presidencia =servidor.members.cache.filter(member => member.roles.cache.has('875200644695355436') && member.roles.cache.has('875200644695355435') && member.user.bot == false).size;
+    let gp =servidor.members.cache.filter(member => member.roles.cache.has('875200644695355436') && member.roles.cache.has('875200644678570084') && member.user.bot == false).size;
+    let projetos =servidor.members.cache.filter(member => member.roles.cache.has('875200644695355436') && member.roles.cache.has('875200644695355432') && member.user.bot == false).size;
+    let adm =servidor.members.cache.filter(member => member.roles.cache.has('875200644695355436') && member.roles.cache.has('875200644678570083') && member.user.bot == false).size;
+    let negocios =servidor.members.cache.filter(member => member.roles.cache.has('875200644695355436') && member.roles.cache.has('875200644678570082') && member.user.bot == false).size;
     let trainee =servidor.members.cache.filter(member => member.roles.cache.has('875200644678570079') && member.user.bot == false).size;
     let consultoria =servidor.members.cache.filter(member => member.roles.cache.has('878749031793320008') && member.user.bot == false).size;
     let visitantes = servidor.members.cache.filter(member => member.roles.cache.has('875200644678570076') && member.user.bot == false).size;
     let bot = servidor.members.cache.filter(member => member.user.bot).size;
-    let usuarios =servidor.memberCount - bot;
+    let usuarios = servidor.memberCount - bot;
     let canaistexto =servidor.channels.cache.filter(a => a.type === "GUILD_TEXT").size;
     let canaisvoz =servidor.channels.cache.filter(a => a.type === "GUILD_VOICE").size;
 
