@@ -23,19 +23,22 @@ module.exports = {
                     option.setName('mes')
                         .setDescription('Mes no qual quer receber o relatorio')
                         .setRequired(true)
-                        .addChoice('Janeiro', 'Janeiro')
-                        .addChoice('Fevereiro', 'Fevereiro')
-                        .addChoice('Março', 'Março')
-                        .addChoice('Abril', 'Abril')
-                        .addChoice('Maio', 'Maio')
-                        .addChoice('Junho', 'Junho')
-                        .addChoice('Julho', 'Julho')
-                        .addChoice('Agosto', 'Agosto')
-                        .addChoice('Setembro', 'Setembro')
-                        .addChoice('Outubro', 'Outubro')
-                        .addChoice('Novembro', 'Novembro')
-                        .addChoice('Dezembro', 'Dezembro') 
-                        ),
+                        .addChoices(
+                            {name: 'Janeiro', value: 'Janeiro'},
+                            {name: 'Fevereiro', value: 'Fevereiro'},
+                            {name: 'Março', value: 'Março'},
+                            {name: 'Abril', value: 'Abril'},
+                            {name: 'Maio', value: 'Maio'},
+                            {name: 'Junho', value: 'Junho'},
+                            {name: 'Julho', value: 'Julho'},
+                            {name: 'Agosto', value: 'Agosto'},
+                            {name: 'Setembro', value: 'Setembro'},
+                            {name: 'Outubro', value: 'Outubro'},
+                            {name: 'Novembro', value: 'Novembro'},
+                            {name: 'Dezembro', value: 'Dezembro'},
+                        )
+                
+                    ),
                 ),
 	async execute(interaction,client, cor , consoleServer , erro, suporte, relatorio, terminal) {
         if(!interaction.member.roles.cache.has("875200644695355436")){

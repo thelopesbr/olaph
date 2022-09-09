@@ -25,15 +25,17 @@ module.exports = (client, cor) =>{
         .setTitle(`Informacoes do servidor **${servidor.name}**`)
         .setColor(cor)
         .setThumbnail(servidor.iconURL())
-        .addField('• Atual responsavel do servidor:', `<@${servidor.ownerId}>`)
-        .addField('• Criado em:', 'quarta-feira, 11 de agosto de 2021 às 23:14')
-        .addField("• ID:", servidor.id)
-        .addField('﻿',`${regras} ﻿ | ﻿ ${avisos} ﻿ | ﻿ ${comandos}`)
-        .addField('﻿','﻿')
-        .addField(`• Membros [${membros}]`, `Presidência: ${presidencia}\n Projetos: ${projetos} \n Gestão de Pessoas: ${gp}\n Adm. Financeiro: ${adm}\n Negócios: ${negocios}\n Trainee: ${trainee}\n Ex-Membro: ${exmembro}\n Consultoria: ${consultoria}\n Visitantes: ${visitantes}\n Bots: ${bot}\n Usuarios: ${usuarios} \n \n \n :white_small_square:   https://discord.gg/74ndRsT2zZ`, true)
-        .addField(`• Canais [${canaistexto+canaisvoz}]`, `💬 Texto: ${canaistexto}\n 🎧 Voz: ${canaisvoz}`, true)
-        .addField(`﻿`,'[<:bytejr:877660498437496882>](https://www.bytejr.com.br)﻿ ﻿ ﻿ ﻿ ﻿ ﻿[<:instagram:877556801195900998>](https://www.instagram.com/bytejr/)﻿ ﻿ ﻿ ﻿ ﻿ ﻿[<:facebook:877554936450269184>](https://www.facebook.com/bytejr)﻿ ﻿ ﻿ ﻿ ﻿ ﻿[<:linkedin:877554936353816656>](https://www.linkedin.com/company/bytejr/)',false)
-    
+        .addFields([
+            { name: '• Atual responsavel do servidor:', value: `<@${servidor.ownerId}>`, inline: false },
+            { name: '• Criado em:', value: `quarta-feira, 11 de agosto de 2021 às 23:14`, inline: false },
+            { name: '• ID:', value: servidor.id, inline: false },
+            { name: '﻿', value: `${regras} ﻿ | ﻿ ${avisos} ﻿ | ﻿ ${comandos}`, inline: false },
+            { name: '﻿', value: '﻿', inline: false },
+            { name: `• Membros [${membros}]`, value: `Presidência: ${presidencia}\n Projetos: ${projetos} \n Gestão de Pessoas: ${gp}\n Adm. Financeiro: ${adm}\n Negócios: ${negocios}\n Trainee: ${trainee}\n Ex-Membro: ${exmembro}\n Consultoria: ${consultoria}\n Visitantes: ${visitantes}\n Bots: ${bot}\n Usuarios: ${usuarios}`, inline: true },
+            { name: `• Canais [${canaistexto+canaisvoz}]`, value: `💬 Texto: ${canaistexto}\n 🎧 Voz: ${canaisvoz}`, inline: true },
+            { name: '﻿', value: ':white_small_square: https://discord.gg/74ndRsT2zZ', inline: false},
+            { name: '﻿', value: '[<:bytejr:877660498437496882>](https://www.bytejr.com.br)﻿ ﻿ ﻿ ﻿ ﻿ ﻿[<:instagram:877556801195900998>](https://www.instagram.com/bytejr/)﻿ ﻿ ﻿ ﻿ ﻿ ﻿[<:facebook:877554936450269184>](https://www.facebook.com/bytejr)﻿ ﻿ ﻿ ﻿ ﻿ ﻿[<:linkedin:877554936353816656>](https://www.linkedin.com/company/bytejr/)', inline: false },
+        ])
     return embed
 
 

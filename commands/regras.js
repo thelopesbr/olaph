@@ -11,15 +11,16 @@ module.exports = {
         .setTitle(`📃 Regras do servidor **${servidor.name}**`)
         .setDescription('Leia atentamente nossas regras')
         .setColor(cor)
-        .addField('﻿','[1] Aqui é um servidor para todo tipo de pessoa, portanto respeite o jeito de cada um.')
-        .addField('﻿','[2] Proibido postar de uma forma repetida (spam) ou em sequência (flood). (Essa regra é aplicada para palavras, emoji ou imagens).')
-        .addField('﻿','[3] Cada canal tem sua singularidade então RESPEITE!')
-        .addField('﻿','[4] Nada de conteúdo adulto ou obsceno. Isso inclui texto, imagens ou links que contenham nudez, sexo, violência pesada ou conteúdo graficamente perturbador.')
-        .addField('﻿','[5] Proibido divulgar links e servidores nos canais ou no DM dos usuários.')
+        .addFields([
+            {name: '﻿', value: '[1] Aqui é um servidor para todo tipo de pessoa, portanto respeite o jeito de cada um.'},
+            {name: '﻿', value: '[2] Proibido postar de uma forma repetida (spam) ou em sequência (flood). (Essa regra é aplicada para palavras, emoji ou imagens).'},
+            {name: '﻿', value: '[3] Cada canal tem sua singularidade então RESPEITE!'},
+            {name: '﻿', value: '[4] Nada de conteúdo adulto ou obsceno. Isso inclui texto, imagens ou links que contenham nudez, sexo, violência pesada ou conteúdo graficamente perturbador.'},
+            {name: '﻿', value: '[5] Proibido divulgar links e servidores nos canais ou no DM dos usuários.'},
+
+        ])
         .setThumbnail(servidor.iconURL())
         .setImage('https://cdn.discordapp.com/attachments/875551615493472256/885323141952446474/MOB_-_Regras_do_servidor.png')
         canal.send({embeds: [regras]})
-        
-
     }
 }

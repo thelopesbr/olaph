@@ -13,11 +13,13 @@ module.exports = {
             option.setName('diretoria')
                 .setDescription('Digite a diretoria no qual quer obter a chave de acesso')
                 .setRequired(true)
-                .addChoice('Projetos', 'Projetos')
-			    .addChoice('Gestão de Pessoas', 'Gestão de Pessoas')
-			    .addChoice('Adm. Financeiro', 'Adm. Financeiro')
-                .addChoice('Negocios', 'Negocios')
-                ),
+				.addChoices(
+					{name: 'Projetos', value: 'Projetos'},
+					{name: 'Gestão de Pessoas', value: 'Gestão de Pessoas'},
+					{name: 'Adm. Financeiro', value: 'Adm. Financeiro'},
+					{name: 'Negocios', value: 'Negocios'},
+			   ) 
+            ),
 	async execute(interaction,client, cor , consoleServer , erro, suporte, relatorio, terminal) {
         if(!interaction.member.roles.cache.has("875200644695355436")){
             return interaction.reply({content: 'Recurso disponivel somente para membros.',ephemeral: true})

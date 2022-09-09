@@ -9,9 +9,12 @@ module.exports = {
             option.setName('ação')
                 .setDescription('Ação no qual quer aplicar ao membro (efetivar/desligar)')
                 .setRequired(true)
-                .addChoice('Efetivar', 'efetivar')
-                .addChoice('Desligar', 'desligar')
+                .addChoices(
+                    {name: 'Efetivar', value: 'efetivar'},
+                    {name: 'Desligar', value: 'desligar'},
                 )
+                
+            )
         .addUserOption(option =>
             option.setName('membro')
                 .setDescription('Membro no qual quer efetivar/desligar')
