@@ -26,8 +26,8 @@ module.exports = {
                 .setRequired(false)
                 ),
 	async execute(interaction,client, cor , consoleServer , erro, suporte, relatorio, terminal) {
-        if(!interaction.member.roles.cache.has("878761418067963984")){
-            return interaction.reply({content: 'Você precisa ser da equipe de suporte para executar esse comando.', ephemeral: true})
+        if(!interaction.member.roles.cache.has("878761418067963984") || !interaction.member.roles.cache.has("925101090490445834")){
+            return interaction.reply({content: 'Você precisa ser diretor ou da equipe de suporte para executar esse comando.', ephemeral: true})
         }
         const açao = interaction.options.getString('ação');
         const membro = interaction.guild.members.cache.get(interaction.options.getMember('membro').id);
@@ -35,7 +35,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
 		.setColor(cor)
         .setTimestamp()
-      
+        
         if(açao == 'efetivar'){
             if(diretoria){
                 membro.roles.set(['875200644695355436',diretoria.id]);
