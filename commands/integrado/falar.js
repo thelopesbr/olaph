@@ -17,10 +17,11 @@ module.exports = {
                 .setRequired(true)
             ),
     async execute(interaction,client, cor , consoleServer , erro, suporte, relatorio, terminal) {
-     
+      
         const canal = interaction.options.getChannel('canal');
-        const msg = await canal.messages.fetch(interaction.options.getString('mensagem'));
-        
+
+        const msg = interaction.options.getString('mensagem')//await canal.messages.fetch(interaction.options.getString('mensagem'));
+
         canal.send(msg);
 
         const embedTerminal = new Discord.MessageEmbed()
@@ -30,7 +31,7 @@ module.exports = {
         const embedConsole = new Discord.MessageEmbed()
         .setTitle('✅ Mensagem enviada!')
         .setColor(cor)
-        .setDescription(`👤 **Autor:** ${interaction.member}\n📪 **Canal:** ${canal}\n ✉️ **Mensagem:** ${msg.content}`)
+        .setDescription(`👤 **Autor:** ${interaction.member}\n📪 **Canal:** ${canal}\n ✉️ **Mensagem:** ${msg}`)
         .setTimestamp()
 
         await interaction.reply({embeds: [embedTerminal], ephemeral: true});

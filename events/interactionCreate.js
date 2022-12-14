@@ -10,7 +10,7 @@ module.exports = {
 			if (!interaction.isCommand() && !interaction.isButton() && !interaction.isSelectMenu()) return;
 			const command = client.commands.get(interaction.commandName);
 			if (!command) return;
-			if(interaction.channel.id != terminal.id && message.channel.id != terminalStaff.id){
+			if(interaction.channel.id != terminal.id && interaction.channel.id != terminalStaff.id){
 				interaction.reply(`Vá para o canal ${terminal}`)
 				
 				setTimeout(() => interaction.deleteReply(), 5000) 

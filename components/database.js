@@ -1,4 +1,8 @@
 const mongoose =  require('mongoose');
+
+mongoose.set('strictQuery', false);
+
+
 mongoose.Promise = global.Promise
 exports.connect = () => {
     var response = ''
