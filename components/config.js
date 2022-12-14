@@ -5,6 +5,8 @@ const data = (client) => {
     const consoleServer = client.channels.cache.get("875211327726059570");
     const suporte = servidor.roles.cache.get('878761418067963984');
     const terminal = client.channels.cache.get('875200644695355440');
+    const terminalStaff = client.channels.cache.get('1042076681587933184');
+
     const info = {
         channel: '875200645626478605',
         panel: '972317313825120307'
@@ -29,6 +31,7 @@ const data = (client) => {
         suporte: suporte,
         relatorio: Relatorio,
         terminal: terminal,
+        terminalStaff: terminalStaff,
         servidor: servidor,
         info: info
     };

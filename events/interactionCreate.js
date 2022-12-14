@@ -5,12 +5,12 @@ module.exports = {
 	execute: async function(interaction,client) {
 		try{
 			const config = Config(client);
-			const { cor , consoleServer , erro, suporte, relatorio, terminal} = config
+			const { cor , consoleServer , erro, suporte, relatorio, terminal, terminalStaff} = config
 	
 			if (!interaction.isCommand() && !interaction.isButton() && !interaction.isSelectMenu()) return;
 			const command = client.commands.get(interaction.commandName);
 			if (!command) return;
-			if(interaction.channel.id != '875200644695355440'){
+			if(interaction.channel.id != terminal.id && message.channel.id != terminalStaff.id){
 				interaction.reply(`Vá para o canal ${terminal}`)
 				
 				setTimeout(() => interaction.deleteReply(), 5000) 

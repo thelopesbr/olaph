@@ -6,7 +6,7 @@ module.exports = {
 	execute: async function(message,client,prefix) {
 		try{
 			const config = Config(client, message);
-			const { cor , consoleServer , erro, suporte, relatorio, terminal} = config
+			const { cor , consoleServer , erro, suporte, relatorio, terminal, terminalStaff} = config
 			const thread = client.channels.cache.get(message.channelId).isThread();
 			if (message.author.bot) return 
 			if (message.channel.type == "DM"){
@@ -46,7 +46,7 @@ module.exports = {
 		
 			if(!message.content.startsWith(prefix))return
 			
-			if(message.channel.id != '875200644695355440' && message.channel.type != "DM" && !thread ){
+			if(message.channel.id != terminal.id && message.channel.id != terminalStaff.id && message.channel.type != "DM" && !thread ){
 				message.delete()
 				const envio = await message.channel.send(`Vá para o canal ${terminal}`)
 				setTimeout(() => envio.delete(), 5000) 
